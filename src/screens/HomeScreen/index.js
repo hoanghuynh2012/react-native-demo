@@ -6,13 +6,7 @@ const HomeScreen = () => {
   const supportedURL = 'https://google.com';
 
   const handleButton = async () => {
-    const supported = await Linking.canOpenURL(supportedURL);
-
-    if (supported) {
-      await Linking.openURL(url);
-    } else {
-      Alert.alert(`Don't know how to open this URL: ${supportedURL}`);
-    }
+    Linking.openURL('appdemo://notificationScreen');
   };
   return (
     <Block middle center flex>
