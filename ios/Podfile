@@ -19,6 +19,8 @@ target 'react_native_demo' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
+  pod 'RNI18n', :path => '../node_modules/react-native-i18n'
+
   target 'react_native_demoTests' do
     inherit! :complete
     # Pods for testing

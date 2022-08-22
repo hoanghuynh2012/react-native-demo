@@ -4,6 +4,8 @@ import {Platform, ScrollView, FlatList, Dimensions} from 'react-native';
 import {pxScale} from '~utils/funcHelper';
 import {Colors} from '~assets';
 
+import i18n from '~i18n';
+
 const window = Dimensions.get('window');
 
 import Block from '~components/Block';
@@ -20,6 +22,7 @@ global.ANDROID = Platform.OS === 'android';
 global.IPAD = width > WIDTH_NEED_CHANGE;
 
 global.React = React;
+global.i18n = i18n;
 // RN Library
 global.ScrollView = ScrollView;
 global.Platform = Platform;
