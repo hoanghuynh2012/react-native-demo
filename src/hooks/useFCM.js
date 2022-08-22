@@ -52,6 +52,7 @@ const useFCM = () => {
         smallIcon: 'ic_launcher',
         largeIcon: 'ic_launcher',
         bigLargeIcon: 'ic_launcher',
+        soundName: 'ting.mp3',
         ...remoteMessage,
       });
     });
@@ -64,7 +65,7 @@ const useFCM = () => {
           '🚀 ~ file: useFCM.js ~ line 60 ~ onNotificationOpenedApp',
           remoteMessage,
         );
-        // Linking.openURL(remoteMessage.data.link);
+        Linking.openURL('appdemo://notificationScreen');
       }
     });
 
@@ -78,9 +79,9 @@ const useFCM = () => {
             '🚀 ~ file: useFCM.js ~ line 74 ~ getInitialNotification',
             remoteMessage,
           );
-          //   setTimeout(() => {
-          //     Linking.openURL(remoteMessage.data.link);
-          //   }, 1000);
+          setTimeout(() => {
+            Linking.openURL('appdemo://notificationScreen');
+          }, 1000);
         }
       });
   }, []);
