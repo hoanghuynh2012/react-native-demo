@@ -45,6 +45,9 @@
     "react-test-renderer": "17.0.2"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "transformIgnorePatterns": [
+      "node_modules/(?!(@react-native|react-native|my-project|react-native-button|nodejs-mobile-react-native|react-navigation|react-native-iphone-x-helper|react-native-responsive-fontsize|react-native-responsive-screen|react-native-i18n)/)"
+    ]
   }
 }

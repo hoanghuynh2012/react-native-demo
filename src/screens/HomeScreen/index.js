@@ -1,10 +1,13 @@
 import {Alert, Linking} from 'react-native';
 import React from 'react';
 import style from './style';
-import I18n from 'react-native-i18n';
+// import I18n from 'react-native-i18n';
+import Block from '~components/Block';
+import CustomText from '~components/CustomText';
+import CustomButton from '~components/CustomButton';
 
 const HomeScreen = () => {
-  const [refresh, setRefresh] = useState(false);
+  const [refresh, setRefresh] = React.useState(false);
   const handleButton = async () => {
     Linking.openURL('appdemo://notificationScreen');
   };
@@ -15,7 +18,7 @@ const HomeScreen = () => {
   };
   return (
     <Block middle center flex>
-      <CustomText>{i18n.t('NAME')}</CustomText>
+      {/* <CustomText>{I18n.t('NAME')}</CustomText> */}
       <CustomButton middle center style={style.button} onPress={handleButton}>
         <CustomText>Click me</CustomText>
       </CustomButton>
