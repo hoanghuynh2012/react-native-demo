@@ -17,6 +17,7 @@ const CustomText = props => {
     padding,
     style,
     children,
+    numberOfLines,
   } = props;
 
   const handleMargins = () => {
@@ -114,7 +115,7 @@ const CustomText = props => {
     size && {fontSize: size},
     margin && {...handleMargins()},
     padding && {...handlePaddings()},
-    align && {textAlign: align},
+    align && {textAlign: 'center'},
     height && {lineHeight: height},
     weight && {
       fontWeight: weight === 'bold' && Platform.OS === 'ios' ? '500' : weight,
@@ -131,7 +132,11 @@ const CustomText = props => {
     style, // rewrite predefined styles
   ];
 
-  return <Text style={textStyles}>{children}</Text>;
+  return (
+    <Text style={textStyles} numberOfLines={numberOfLines}>
+      {children}
+    </Text>
+  );
 };
 
 export default CustomText;

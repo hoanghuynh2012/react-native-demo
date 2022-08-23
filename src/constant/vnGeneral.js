@@ -1,3 +1,17 @@
 export default {
   NAME: 'Họ Tên',
+  CONTACT: 'Liên hệ',
+  ADDRESS: 'Địa chỉ',
+  SUBMIT: 'Xác nhận',
+  UPDATE: 'Cập nhật',
+  DELETE: 'Xóa',
+  TITLE_DELETE_USER: 'Xác nhận xóa',
+  SUB_TITLE_DELETE_USER: 'Bạn có chắc muốn xóa người dùng này không ?',
+  SUCCESS: 'Thành công',
+  FAILED: 'Thất bại',
+  REGISTERED_SUCCESS: 'Đăng kí thành công',
+  PLEASE_ADDRESS: 'Vui lòng điền địa chỉ',
+  PLEASE_NAME: 'Vui lòng điền họ tên',
+  PLEASE_CONTACT: 'ui lòng điền thông tin liên hệ',
+  NOT_FOUND: 'Không có data',
 };

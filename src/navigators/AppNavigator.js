@@ -1,6 +1,6 @@
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {NotificationScreen, HomeScreen} from '~screens';
+import {NotificationScreen, HomeScreen, RealmScreen} from '~screens';
 import {ActivityIndicator} from 'react-native';
 
 const Stack = createNativeStackNavigator();
@@ -30,6 +30,7 @@ function AppNavigator() {
         screenOptions={{
           headerShown: false,
         }}>
+        <Stack.Screen name="RealmScreen" component={RealmScreen} />
         <Stack.Screen name="HomeScreen" component={HomeScreen} />
         <Stack.Screen
           name="NotificationScreen"
