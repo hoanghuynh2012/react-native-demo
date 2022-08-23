@@ -7,8 +7,16 @@ install! 'cocoapods', :deterministic_uuids => false
 target 'react_native_demo' do
   config = use_native_modules!
 
+
+
   # Flags change depending on the env values.
   flags = get_default_flags()
+  # firebase
+  pod 'Firebase', :modular_headers => true
+  pod 'FirebaseCore', :modular_headers => true
+  pod 'FirebaseCoreInternal', :modular_headers => true
+  pod 'GoogleUtilities', :modular_headers => true
+  $RNFirebaseAsStaticFramework = true
 
   use_react_native!(
     :path => config[:reactNativePath],
@@ -19,7 +27,8 @@ target 'react_native_demo' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
-  pod 'RNI18n', :path => '../node_modules/react-native-i18n'
+
+ 
 
   target 'react_native_demoTests' do
     inherit! :complete

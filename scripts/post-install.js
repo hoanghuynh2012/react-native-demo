@@ -14,11 +14,11 @@ const os = require('os');
   {command: 'jetify'},
 
   // on iOS, make sure our native modules are installed
-  // {
-  //   command: 'arch -x86_64 pod install --repo-update',
-  //   cwd: 'ios',
-  //   onlyPlatforms: ['darwin'],
-  // },
+  {
+    command: 'arch -x86_64 pod install --repo-update',
+    cwd: 'ios',
+    onlyPlatforms: ['darwin'],
+  },
 ]
   .filter(
     ({onlyPlatforms}) =>
