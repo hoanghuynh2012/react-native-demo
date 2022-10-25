@@ -1,6 +1,11 @@
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {NotificationScreen, HomeScreen, RealmScreen} from '~screens';
+import {
+  NotificationScreen,
+  HomeScreen,
+  RealmScreen,
+  PlaySoundScreen,
+} from '~screens';
 import {ActivityIndicator} from 'react-native';
 
 const Stack = createNativeStackNavigator();
@@ -26,7 +31,7 @@ function AppNavigator() {
       linking={linking}
       fallback={<ActivityIndicator color="blue" size="large" />}>
       <Stack.Navigator
-        initialRouteName="HomeScreen"
+        initialRouteName="PlaySoundScreen"
         screenOptions={{
           headerShown: false,
         }}>
@@ -36,6 +41,7 @@ function AppNavigator() {
           name="NotificationScreen"
           component={NotificationScreen}
         />
+        <Stack.Screen name="PlaySoundScreen" component={PlaySoundScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
