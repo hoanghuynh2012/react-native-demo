@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* react_native_demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* react_native_demoTests.m */; };
+		063BAE062907CD4900358C9F /*  icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 063BAE042907CD4800358C9F /*  icon@2x.png */; };
+		063BAE072907CD4900358C9F /* icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 063BAE052907CD4900358C9F /* icon@3x.png */; };
+		063BAE0A2907CD7600358C9F /*  icon2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 063BAE082907CD7500358C9F /*  icon2@3x.png */; };
+		063BAE0B2907CD7600358C9F /*  icon2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 063BAE092907CD7500358C9F /*  icon2@2x.png */; };
 		064464EC28B46C5900054048 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 064464EB28B46C5900054048 /* GoogleService-Info.plist */; };
 		0C80B921A6F3F58F76C31292 /* libPods-react_native_demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-react_native_demo.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
@@ -31,6 +35,10 @@
 		00E356EE1AD99517003FC87E /* react_native_demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = react_native_demoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* react_native_demoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = react_native_demoTests.m; sourceTree = "<group>"; };
+		063BAE042907CD4800358C9F /*  icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = " icon@2x.png"; sourceTree = "<group>"; };
+		063BAE052907CD4900358C9F /* icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@3x.png"; sourceTree = "<group>"; };
+		063BAE082907CD7500358C9F /*  icon2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = " icon2@3x.png"; sourceTree = "<group>"; };
+		063BAE092907CD7500358C9F /*  icon2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = " icon2@2x.png"; sourceTree = "<group>"; };
 		064464EB28B46C5900054048 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* react_native_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = react_native_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = react_native_demo/AppDelegate.h; sourceTree = "<group>"; };
@@ -85,9 +93,21 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		063BAE032907CCC600358C9F /* AppIcons */ = {
+			isa = PBXGroup;
+			children = (
+				063BAE092907CD7500358C9F /*  icon2@2x.png */,
+				063BAE082907CD7500358C9F /*  icon2@3x.png */,
+				063BAE042907CD4800358C9F /*  icon@2x.png */,
+				063BAE052907CD4900358C9F /* icon@3x.png */,
+			);
+			name = AppIcons;
+			sourceTree = "<group>";
+		};
 		13B07FAE1A68108700A75B9A /* react_native_demo */ = {
 			isa = PBXGroup;
 			children = (
+				063BAE032907CCC600358C9F /* AppIcons */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -247,7 +267,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				063BAE0B2907CD7600358C9F /*  icon2@2x.png in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				063BAE0A2907CD7600358C9F /*  icon2@3x.png in Resources */,
+				063BAE072907CD4900358C9F /* icon@3x.png in Resources */,
+				063BAE062907CD4900358C9F /*  icon@2x.png in Resources */,
 				064464EC28B46C5900054048 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,6 +526,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = react_native_demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -528,6 +553,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = react_native_demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
